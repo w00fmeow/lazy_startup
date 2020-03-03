@@ -1,2 +1,2 @@
 # lazy_startup
-Automate opening daily apps in gnome 3 using bash script.
+Automate opening daily apps in GNOME3 using bash script.
