@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=lazy_startup.sh
+GenericName=lazy_startup.sh
+Comment=Automate opening daily apps
+Exec=/path/to/lazy_startup/lazy_startup.sh
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
