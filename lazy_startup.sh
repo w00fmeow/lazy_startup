@@ -40,14 +40,14 @@ launch "/path/to/telegram -many -workdir /path/to/second/telegram/account"
 wmctrl -ir $ID -t 2
 wmctrl -ir $ID -b remove,maximized_vert,maximized_horz
 sleep 0.2
-wmctrl -i -r $ID -e 0,"$HALF_W",0,"$HALF_W",$(($HALF_H / 2))
+wmctrl -i -r $ID -e 0,"$HALF_W",0,"$HALF_W","$HALF_H"
 
 # launch third Telegram acc
 launch "/path/to/telegram -many -workdir /path/to/third/telegram/account"
 wmctrl -ir $ID -t 2
 wmctrl -ir $ID -b remove,maximized_vert,maximized_horz
 sleep 0.2
-wmctrl -i -r $ID -e 0,"$HALF_W","$SCREEN_WIDTH","$HALF_W",$(($HALF_H / 2))
+wmctrl -i -r $ID -e 0,"$HALF_W","$SCREEN_WIDTH","$HALF_W","$HALF_H"
 sleep 1
 #focus on terminal
 wmctrl -a gnome-terminal
